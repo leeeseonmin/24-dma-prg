@@ -31,7 +31,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main style="width:640px; margin: 0 auto;">
     <section>
       <h2>Headline</h2>
       <article id:"article1">
@@ -123,6 +123,53 @@
           <input type="submit">
           <button type="reset">초기화</button>
         </form>
+      </section>
+      <style>
+        .div-squre {
+          width: 100px;
+          height: 100px;
+        }
+        .sq-pd {
+          /* padding: 10px; */
+          /* padding: 10px 20px; */
+          /* padding: 10px 20px 30px; */
+          padding: 10px 20px 30px 40px;
+          paddiing-top: 30px;
+        }
+        .sq-mg {
+          margin: 30px 20px;
+        }
+        .div-center {
+          margin: 0px auto;
+          width: 25%;
+        }
+      </style>
+      <section>
+       <div class="div-squre" style="background-color: skyblue;">1</div>
+       <div class="div-squre sq-pd" style="background-color: salmon;">2</div> 
+       <div class="div-squre sq-mg" style="background-color: gray;">3</div> 
+       <div class="div-squre div-center" style="background-color: lightgray;">4</div> 
+      </section>
+      <style>
+       .flex-container {
+       display: flex;
+       width:295px;
+       height: 120px;
+         /*
+       flex-direction: row;
+       flex-wrap: nowrap;
+      */
+      flex-flow: colum nowrap;
+       }
+       .flex-box {width: 100px; height:100px; text-align:center;}
+       .bg-red {background-color: red;}
+       .bg-blue {background-color: blue;}
+       .bg-gray {background-color: gray;}
+      </style>
+      <section class="flex-container">
+       <article class="flex-box bg-red">1</article>
+       <article class="flex-box bg-blue">2</article>
+       <article class="flex-box bg-gray">3</article>
       </section>
     </main>
     
